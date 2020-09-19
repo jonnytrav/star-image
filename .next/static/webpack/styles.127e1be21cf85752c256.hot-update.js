@@ -1,4 +1,7 @@
-(window["webpackJsonp_N_E"] = window["webpackJsonp_N_E"] || []).push([["styles"],{
+webpackHotUpdate_N_E("styles",{
+
+/***/ "./src/pages/index.module.scss":
+false,
 
 /***/ "./src/styles/index.module.scss":
 /*!**************************************!*\
@@ -11,4 +14,4 @@ eval("// extracted by mini-css-extract-plugin\nmodule.exports = {\"test\":\"src-
 
 /***/ })
 
-}]);
+})

@@ -9,10 +9,9 @@ module.exports = withStyles({
   },
   sassLoaderOptions: {
     sassOptions: {
-      includePaths: ["src/styles"] // @import 'variables'; # loads (src/styles/varialbes.scss), you got it..
+      includePaths: ["src/styles"] // @import 'variables'; # loads (src/styles/variables.scss), you got it..
     }
   },
-  // cssLoaderOptions: {...},
   // postcssLoaderOptions: {...},
   miniCssExtractOptions: {
     ignoreOrder: true

@@ -1,4 +1,4 @@
-import styles from "./index.module.scss";
+import styles from "../styles/index.module.scss";
 
 const Index = () => <h1 className={styles.test}>Hello from Next!</h1>;
 
