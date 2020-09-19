@@ -1,3 +1,26 @@
-.test {
-  background-color: blue;
+.container {
+  height: 98vh;
+  border: 1px solid #232639;
+  display: flex;
+  flex-flow: row wrap;
+  .navigation {
+    height: 100%;
+    width: 16%;
+    background-color: #232639;
+    ul {
+      padding: 0;
+      li {
+        // MAY NEED TO ADJUST LI MARGIN AND PADDING LATER
+        list-style-type: none;
+        color: white;
+        box-sizing: border-box;
+        margin: 15% 0% 0% 0%;
+        padding: 0% 0% 0% 2%;
+        // border: 1px solid white;
+      }
+      li:hover {
+        cursor: pointer;
+      }
+    }
+  }
 }
