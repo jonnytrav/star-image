@@ -1,26 +1,79 @@
+@import "./mixin.module.scss";
+
 .container {
-  height: 98vh;
-  border: 1px solid #232639;
-  display: flex;
-  flex-flow: row wrap;
-  .navigation {
-    height: 100%;
-    width: 16%;
-    background-color: #232639;
-    ul {
-      padding: 0;
-      li {
-        // MAY NEED TO ADJUST LI MARGIN AND PADDING LATER
-        list-style-type: none;
-        color: white;
-        box-sizing: border-box;
-        margin: 15% 0% 0% 0%;
-        padding: 0% 0% 0% 2%;
-        // border: 1px solid white;
+  box-sizing: border-box;
+  height: 97vh;
+  width: 70%;
+  margin: 0 auto;
+  //   background-image: url("../images/pens-bg.jpg");
+  //   background-position: center;
+  //   background-size: 1200px 1000px;
+
+  .headerContainer {
+    @include flexRow;
+    height: 12%;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 3% 2% 3% 2%;
+    .loginContainer {
+      @include flexRow;
+      width: 49%;
+      justify-content: space-evenly;
+      align-items: center;
+      .loginButton {
+        @include defaultLink;
       }
-      li:hover {
+      .loginButton:hover {
         cursor: pointer;
       }
     }
+  }
+
+  .missionStatementContainer {
+    @include flexRow;
+    height: 34%;
+    border: 1px solid black;
+    justify-content: space-evenly;
+    .anniversaryLogoContainer {
+      @include flexCol;
+      width: 49%;
+      border: 1px solid black;
+      .anniversaryLogo {
+        height: 75%;
+      }
+      .aboutContactLinks {
+        @include flexRow;
+        justify-content: space-evenly;
+        .about {
+          @include defaultLink;
+        }
+        .about:hover {
+          cursor: pointer;
+        }
+        .contact {
+          @include defaultLink;
+        }
+        .contact:hover {
+          cursor: pointer;
+        }
+      }
+    }
+    .missionStatement {
+      width: 49%;
+      border: 1px solid black;
+    }
+  }
+
+  .cardsContainer {
+    @include flexRow;
+    height: 45%;
+    border: 1px solid black;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .footerContainer {
+    @include flexRow;
+    justify-content: center;
   }
 }

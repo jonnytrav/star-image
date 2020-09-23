@@ -1,0 +1,15 @@
+@mixin defaultLink {
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 14px 14px 14px 14px;
+  padding: 2% 2% 2% 2%;
+}
+
+@mixin flexRow {
+  display: flex;
+  flex-flow: row nowrap;
+}
+@mixin flexCol {
+  display: flex;
+  flex-flow: column nowrap;
+}
