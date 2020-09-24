@@ -1,15 +1,16 @@
 @mixin defaultContainer {
   box-sizing: border-box;
-  height: 98vh;
-  width: 100%;
   margin: 0;
   padding: 0;
+  height: 98vh;
+  width: 100%;
   background: rgb(0, 51, 153);
   background: linear-gradient(
     90deg,
     rgba(0, 51, 153, 1) 0%,
-    rgba(102, 153, 255, 1) 17%,
-    rgba(102, 153, 255, 1) 100%
+    rgba(102, 153, 255, 1) 14%,
+    rgba(102, 153, 255, 1) 86%,
+    rgba(0, 51, 153, 1) 100%
   );
 }
 @mixin defaultLink {

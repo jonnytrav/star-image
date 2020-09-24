@@ -6,7 +6,7 @@ const Index = () => {
   return (
     <div className={styles.defaultContainer}>
       <header className={styles.headerContainer}>
-        <h2>Logo/Company Name</h2>
+        <h2 className={styles.title}>PowerEngage</h2>
         <div className={styles.loginContainer}>
           <Link href="/login">
             <div className={styles.loginButton}>Admin</div>
@@ -24,10 +24,10 @@ const Index = () => {
           </div>
           <div className={styles.aboutContactLinks}>
             <Link href="/about">
-              <div className={styles.about}>About</div>
+              <div className={styles.link}>About</div>
             </Link>
             <Link href="/contact">
-              <div className={styles.contact}>Contact Us</div>
+              <div className={styles.link}>Contact Us</div>
             </Link>
           </div>
         </div>
@@ -57,7 +57,7 @@ const Index = () => {
 
       <footer className={styles.footerContainer}>
         <div>
-          <span>Footer goes here!</span>
+          <span>Founded by Carlos "Coach" Johnson</span>
         </div>
       </footer>
     </div>

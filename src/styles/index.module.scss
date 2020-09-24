@@ -3,12 +3,14 @@
 .defaultContainer {
   @include defaultContainer;
   @include bgBlue1;
-
+  // ***********************************
   .headerContainer {
     @include flexRow;
     color: white;
     height: 12%;
+    display: flex;
     justify-content: space-between;
+    align-items: center;
     box-sizing: border-box;
     padding: 3% 2% 3% 2%;
     .loginContainer {
@@ -18,15 +20,16 @@
       align-items: center;
       .loginButton {
         @include defaultLink;
-        @include bgBlue2;
-        border: 2px solid white;
+        @include bgBlue3;
+        border: 1px solid white;
       }
       .loginButton:hover {
         cursor: pointer;
+        @include bgBlue1;
       }
     }
   }
-
+  // ***********************************
   .missionStatementContainer {
     @include flexRow;
     color: white;
@@ -43,19 +46,14 @@
       .aboutContactLinks {
         @include flexRow;
         justify-content: space-evenly;
-        .about {
+        .link {
           @include defaultLink;
+          @include bgBlue3;
           border: 1px solid white;
         }
-        .about:hover {
+        .link:hover {
           cursor: pointer;
-        }
-        .contact {
-          @include defaultLink;
-          border: 1px solid white;
-        }
-        .contact:hover {
-          cursor: pointer;
+          @include bgBlue1;
         }
       }
     }
@@ -65,7 +63,7 @@
       border-radius: 15px 15px 15px 15px;
     }
   }
-
+  // ***********************************
   .cardsContainer {
     @include flexRow;
     color: white;
@@ -73,16 +71,18 @@
     justify-content: space-evenly;
     align-items: center;
     .card {
-      border: 1px solid white;
+      border: 2px solid white;
       padding: 4% 3% 4% 3%;
-      border-radius: 13px 13px 13px 13px;
+      border-radius: 9px 9px 9px 9px;
     }
   }
-
+  // ***********************************
   .footerContainer {
     @include flexRow;
+    height: 8.5%;
     color: #003399;
     justify-content: center;
+    align-items: center;
     border-top: 1px solid white;
   }
 }
