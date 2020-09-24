@@ -17,12 +17,12 @@ const Index = () => {
         </div>
       </header>
 
-      <section className={styles.missionStatementContainer}>
+      <section className={styles.logoLinksStatementContainer}>
         <div className={styles.anniversaryLogoContainer}>
           <div className={styles.anniversaryLogo}>
             Anniversary logo would go here!
           </div>
-          <div className={styles.aboutContactLinks}>
+          <div className={styles.linksContainer}>
             <Link href="/about">
               <div className={styles.link}>About</div>
             </Link>
@@ -31,7 +31,7 @@ const Index = () => {
             </Link>
           </div>
         </div>
-        <div className={styles.missionStatement}>
+        <div className={styles.missionStatementContainer}>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Neque
