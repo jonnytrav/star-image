@@ -4,9 +4,9 @@ import styles from "../styles/index.module.scss";
 
 const Index = () => {
   return (
-    <div className={styles.container}>
+    <div className={styles.defaultContainer}>
       <header className={styles.headerContainer}>
-        <div>Logo IMG here later</div>
+        <h2>Logo/Company Name</h2>
         <div className={styles.loginContainer}>
           <Link href="/login">
             <div className={styles.loginButton}>Admin</div>
@@ -49,10 +49,10 @@ const Index = () => {
       </section>
 
       <section className={styles.cardsContainer}>
-        <div>Teacher Portal</div>
-        <div>Parent Portal</div>
-        <div>Students</div>
-        <div>Leadership Program</div>
+        <div className={styles.card}>Teacher Portal</div>
+        <div className={styles.card}>Parent Portal</div>
+        <div className={styles.card}>Students</div>
+        <div className={styles.card}>Leadership Program</div>
       </section>
 
       <footer className={styles.footerContainer}>

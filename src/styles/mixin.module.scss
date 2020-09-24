@@ -1,6 +1,18 @@
+@mixin defaultContainer {
+  box-sizing: border-box;
+  height: 98vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background: rgb(0, 51, 153);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 51, 153, 1) 0%,
+    rgba(102, 153, 255, 1) 17%,
+    rgba(102, 153, 255, 1) 100%
+  );
+}
 @mixin defaultLink {
-  background-color: white;
-  border: 1px solid black;
   border-radius: 14px 14px 14px 14px;
   padding: 2% 2% 2% 2%;
 }
@@ -12,4 +24,17 @@
 @mixin flexCol {
   display: flex;
   flex-flow: column nowrap;
+}
+
+@mixin bgBlue1 {
+  background-color: #6699ff;
+}
+@mixin bgBlue2 {
+  background-color: #3366cc;
+}
+@mixin bgBlue3 {
+  background-color: #003399;
+}
+@mixin ourWhite {
+  background-color: #ffffff;
 }

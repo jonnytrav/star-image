@@ -1,16 +1,12 @@
 @import "./mixin.module.scss";
 
-.container {
-  box-sizing: border-box;
-  height: 97vh;
-  width: 70%;
-  margin: 0 auto;
-  //   background-image: url("../images/pens-bg.jpg");
-  //   background-position: center;
-  //   background-size: 1200px 1000px;
+.defaultContainer {
+  @include defaultContainer;
+  @include bgBlue1;
 
   .headerContainer {
     @include flexRow;
+    color: white;
     height: 12%;
     justify-content: space-between;
     box-sizing: border-box;
@@ -22,6 +18,8 @@
       align-items: center;
       .loginButton {
         @include defaultLink;
+        @include bgBlue2;
+        border: 2px solid white;
       }
       .loginButton:hover {
         cursor: pointer;
@@ -31,13 +29,14 @@
 
   .missionStatementContainer {
     @include flexRow;
+    color: white;
     height: 34%;
-    border: 1px solid black;
     justify-content: space-evenly;
     .anniversaryLogoContainer {
       @include flexCol;
       width: 49%;
-      border: 1px solid black;
+      border: 1px solid white;
+      border-radius: 15px 15px 15px 15px;
       .anniversaryLogo {
         height: 75%;
       }
@@ -46,12 +45,14 @@
         justify-content: space-evenly;
         .about {
           @include defaultLink;
+          border: 1px solid white;
         }
         .about:hover {
           cursor: pointer;
         }
         .contact {
           @include defaultLink;
+          border: 1px solid white;
         }
         .contact:hover {
           cursor: pointer;
@@ -60,20 +61,28 @@
     }
     .missionStatement {
       width: 49%;
-      border: 1px solid black;
+      border: 1px solid white;
+      border-radius: 15px 15px 15px 15px;
     }
   }
 
   .cardsContainer {
     @include flexRow;
+    color: white;
     height: 45%;
-    border: 1px solid black;
     justify-content: space-evenly;
     align-items: center;
+    .card {
+      border: 1px solid white;
+      padding: 4% 3% 4% 3%;
+      border-radius: 13px 13px 13px 13px;
+    }
   }
 
   .footerContainer {
     @include flexRow;
+    color: #003399;
     justify-content: center;
+    border-top: 1px solid white;
   }
 }
