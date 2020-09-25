@@ -70,10 +70,21 @@
     height: 45%;
     justify-content: space-evenly;
     align-items: center;
-    .card {
-      border: 2px solid white;
-      padding: 4% 3% 4% 3%;
-      border-radius: 9px 9px 9px 9px;
+    .teacherCard {
+      @include defaultCard;
+      background-image: url("../images/card-bg-teacher.jpg");
+    }
+    .parentCard {
+      @include defaultCard;
+      background-image: url("../images/card-bg-parent.jpg");
+    }
+    .studentCard {
+      @include defaultCard;
+      background-image: url("../images/card-bg-student.jpg");
+    }
+    .leadershipCard {
+      @include defaultCard;
+      background-image: url("../images/card-bg-leadership.jpg");
     }
   }
   // ***********************************

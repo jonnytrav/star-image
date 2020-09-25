@@ -49,10 +49,12 @@ const Index = () => {
       </section>
 
       <section className={styles.cardsContainer}>
-        <div className={styles.card}>Teacher Portal</div>
-        <div className={styles.card}>Parent Portal</div>
-        <div className={styles.card}>Students</div>
-        <div className={styles.card}>Leadership Program</div>
+        <div className={styles.teacherCard} id="parent">
+          Teacher Portal
+        </div>
+        <div className={styles.parentCard}>Parent Portal</div>
+        <div className={styles.studentCard}>Students</div>
+        <div className={styles.leadershipCard}>Leadership Program</div>
       </section>
 
       <footer className={styles.footerContainer}>
