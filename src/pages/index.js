@@ -9,13 +9,32 @@ const Index = () => {
         <h2 className={styles.title}>PowerEngage</h2>
         <div className={styles.loginContainer}>
           <Link href="/login">
-            <div className={styles.loginButton}>Admin</div>
+            <div className={styles.loginButton}>Get Access</div>
           </Link>
           <Link href="/login">
-            <div className={styles.loginButton}>Get Access</div>
+            <div className={styles.loginButton}>Admin</div>
           </Link>
         </div>
       </header>
+
+      <section className={styles.cardsContainer}>
+        <div className={styles.cardComponent}>
+          <h4 className={styles.cardTitle}>Teacher Portal</h4>
+          <div className={styles.teacherCard}></div>
+        </div>
+        <div className={styles.cardComponent}>
+          <h4 className={styles.cardTitle}>Parent Portal</h4>
+          <div className={styles.parentCard}></div>
+        </div>
+        <div className={styles.cardComponent}>
+          <h4 className={styles.cardTitle}>Students</h4>
+          <div className={styles.studentCard}></div>
+        </div>
+        <div className={styles.cardComponent}>
+          <h4 className={styles.cardTitle}>Leadership Program</h4>
+          <div className={styles.leadershipCard}></div>
+        </div>
+      </section>
 
       <section className={styles.logoLinksStatementContainer}>
         <div className={styles.anniversaryLogoContainer}>
@@ -46,15 +65,6 @@ const Index = () => {
             elit. Risus in hendrerit gravida rutrum quisque non.
           </p>
         </div>
-      </section>
-
-      <section className={styles.cardsContainer}>
-        <div className={styles.teacherCard} id="parent">
-          Teacher Portal
-        </div>
-        <div className={styles.parentCard}>Parent Portal</div>
-        <div className={styles.studentCard}>Students</div>
-        <div className={styles.leadershipCard}>Leadership Program</div>
       </section>
 
       <footer className={styles.footerContainer}>

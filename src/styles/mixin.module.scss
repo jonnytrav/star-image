@@ -1,9 +1,7 @@
 @mixin defaultContainer {
   box-sizing: border-box;
-  margin: 0;
-  margin-top: 1.25%;
   padding: 0;
-  height: 95vh;
+  height: 97vh;
   width: 100%;
   background: rgb(0, 51, 153);
   background: linear-gradient(
@@ -12,12 +10,11 @@
     rgba(102, 153, 255, 1) 14%
   );
 }
-@mixin defaultCard {
-  border: 2px solid white;
-  padding: 4% 3% 4% 3%;
-  border-radius: 9px 9px 9px 9px;
+@mixin defaultCardBg {
+  height: 60%;
   background-position: center;
   background-size: cover;
+  // border: 1px solid white;
 }
 @mixin defaultLink {
   border-radius: 14px 14px 14px 14px;
